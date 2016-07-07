@@ -430,7 +430,7 @@
             if (_imageView == nil)
             {
                 [self createViews];
-                [self performSelector:@selector(hide:) withObject:nil afterDelay:splashDuration];
+                [self performSelector:@selector(hide:) withObject:nil afterDelay:splashDuration/1000];
             }
         }
         else if (fadeDuration == 0 && splashDuration == 0)
